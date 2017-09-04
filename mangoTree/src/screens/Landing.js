@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
   instructions: {
     textAlign: 'center',
     color: '#333333',
-    marginBottom: 5
+    marginBottom: 5,
   },
   textInput: {
     margin: 15,
@@ -45,7 +45,7 @@ class Landing extends Component {
   }
 
   constructor () {
-    super(),
+    super()
     this.state = {
       name: '',
       treeName: ''
@@ -55,7 +55,7 @@ class Landing extends Component {
   _startTree () {
     if (this.state.treeName.length > 0) {
       this.props.startTree(this.state.treeName)
-      this.props.navigation.navigate('playground')
+      this.props.navigation.navigate('Playground')
     } else {
       alert('Maaf, tidak bisa tanpa input nama')
     }
